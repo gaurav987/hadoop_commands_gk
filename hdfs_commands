@@ -1,0 +1,4 @@
+# in hdfs file system / is root directory
+  hadoop fs -ls /
+# hadoop command to create directory in HDFS 
+  hadoop fs -mkdir /input_data

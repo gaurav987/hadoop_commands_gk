@@ -2,3 +2,5 @@
   hadoop fs -ls /
 # hadoop command to create directory in HDFS 
   hadoop fs -mkdir /input_data
+# moove data or files from local inside hdfs
+  hadoop fs -put testdemo/tress.csv /input_data

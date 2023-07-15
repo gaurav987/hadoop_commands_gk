@@ -4,3 +4,5 @@
   hadoop fs -mkdir /input_data
 # moove data or files from local inside hdfs
   hadoop fs -put testdemo/tress.csv /input_data
+# copy data files inside hdfs
+hadoop fs -put un-general-debates.csv /input_data

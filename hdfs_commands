@@ -1,8 +1,20 @@
 # in hdfs file system / is root directory
   hadoop fs -ls /
+
 # hadoop command to create directory in HDFS 
   hadoop fs -mkdir /input_data
+
 # moove data or files from local inside hdfs
   hadoop fs -put testdemo/tress.csv /input_data
+
 # copy data files inside hdfs
   hadoop fs -put un-general-debates.csv /input_data
+
+#copy  file inside workspace(local system) from hdfs 
+  hadoop fs -copyToLocal /input_data/trees.csv ./
+
+#delete file from hdfs
+  hadoop fs -rm -r /test
+
+# see the content of file 
+  hadoop fs -cat /input_data/trees.csv
